@@ -10,10 +10,7 @@ public class ThomasVerlyndeRepository {
         }
         String Choix;
         do {
-            System.out.println("Tapez A pour ajouter un segment");
-            System.out.println("Tapez I pour montrer le tableau");
-            System.out.println("Tapez Q quitter le programme");
-            Choix = input.next();
+            Choix = affichageMenu(input);
             switch (Choix) {
                 case "A":
                     ajoutSegment(input, tableau);
@@ -28,6 +25,16 @@ public class ThomasVerlyndeRepository {
                     System.out.println("Commande non exécutable");
             }
         } while (!Choix.equals("M") && !Choix.equals("Q"));
+        input.close();
+    }
+
+    public static String affichageMenu(Scanner input) {
+        String Choix;
+        System.out.println("Tapez A pour ajouter un segment");
+        System.out.println("Tapez I pour montrer le tableau");
+        System.out.println("Tapez Q quitter le programme");
+        Choix = input.next();
+        return Choix;
     }
 
     public static void ajoutSegment(Scanner input, char[] tableau) {
