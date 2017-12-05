@@ -1,16 +1,21 @@
 package thomasverlynderepository;
+
 import java.util.Scanner;
+
 public class ThomasVerlyndeRepository {
 
+    static char[] tableau;
+    static Scanner input;
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        char[] tableau = initTableau();
+        input = new Scanner(System.in);
+        tableau = initTableau();
         String Choix;
         do {
-            Choix = affichageMenu(input);
+            Choix = affichageMenu();
             switch (Choix) {
                 case "A":
-                    ajoutSegment(input, tableau);
+                    ajoutSegment();
                     break;
                 case "I":
                     System.out.println(tableau);
@@ -26,14 +31,14 @@ public class ThomasVerlyndeRepository {
     }
 
     public static char[] initTableau() {
-        char[] tableau = new char[80];
+        tableau = new char[80];
         for (int i = 0; i < tableau.length; i++) {
             tableau[i] = '.';
         }
         return tableau;
     }
 
-    public static String affichageMenu(Scanner input) {
+    public static String affichageMenu() {
         String Choix;
         System.out.println("Tapez A pour ajouter un segment");
         System.out.println("Tapez I pour montrer le tableau");
@@ -42,7 +47,7 @@ public class ThomasVerlyndeRepository {
         return Choix;
     }
 
-    public static void ajoutSegment(Scanner input, char[] tableau) {
+    public static void ajoutSegment() {
         System.out.println("Tapez caractère, puis position, puis longueur");
         char caractere = input.next().charAt(0);
         int positionInit = input.nextInt();
