@@ -4,10 +4,7 @@ public class ThomasVerlyndeRepository {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        char[] tableau = new char[80];
-        for (int i = 0; i < tableau.length; i++) {
-            tableau[i] = '.';
-        }
+        char[] tableau = initTableau();
         String Choix;
         do {
             Choix = affichageMenu(input);
@@ -24,8 +21,16 @@ public class ThomasVerlyndeRepository {
                 default:
                     System.out.println("Commande non exécutable");
             }
-        } while (!Choix.equals("M") && !Choix.equals("Q"));
+        } while (!Choix.equals("Q"));
         input.close();
+    }
+
+    public static char[] initTableau() {
+        char[] tableau = new char[80];
+        for (int i = 0; i < tableau.length; i++) {
+            tableau[i] = '.';
+        }
+        return tableau;
     }
 
     public static String affichageMenu(Scanner input) {
