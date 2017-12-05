@@ -1,8 +1,8 @@
-package thomasverlynderepository;
+package coursEFPC;
 
 import java.util.Scanner;
 
-public class ThomasVerlyndeRepository {
+public class ExoSegments {
 
     static char[] tableau = initTableau();
     static Scanner input = new Scanner(System.in);
