@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class ThomasVerlyndeRepository {
 
-    static char[] tableau;
-    static Scanner input;
+    static char[] tableau = initTableau();
+    static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        input = new Scanner(System.in);
-        tableau = initTableau();
         String Choix;
         do {
             Choix = affichageMenu();
