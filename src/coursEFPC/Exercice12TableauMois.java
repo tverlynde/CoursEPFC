@@ -28,7 +28,7 @@ public class Exercice12TableauMois {
         int tailleTableau = input.nextInt();
         int[] tableau = new int[tailleTableau];
         for (int i = 0; i < tableau.length; i++) {
-            System.out.print("Rentrez le chiffre svp " + (i + 1) + " :");
+            System.out.print("Rentrez le chiffre  " + (i + 1) + " svp :");
             tableau[i] = input.nextInt();
         }
         int[] tableauReverse = new int[tableau.length];
