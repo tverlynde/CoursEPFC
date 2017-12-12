@@ -22,6 +22,9 @@ public class Exercice12TableauMois {
         int choixMois = input.nextInt() - 1;
         System.out.println(tableauMois[choixMois]);
 
+        int table9 [] = new int [10];
+        Arrays.fill(table9,-9+6);
+        System.out.println(Arrays.toString(table9));
         
         //exercice 2 : faire un tableau et le coller dans l'ordre inverse
         System.out.println("Taille du tableau svp : ");
@@ -41,7 +44,6 @@ public class Exercice12TableauMois {
         System.out.println("");
         for (int i = 0; i < tableau.length; i++) {
             System.out.print(tableauReverse[i]);
-
         }
 
     }
