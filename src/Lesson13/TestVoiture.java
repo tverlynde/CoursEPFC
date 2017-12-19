@@ -13,10 +13,10 @@ public class TestVoiture {
 
     public static void main(String[] args) {
         TypeVoiture maVoitureQuiPollue = new TypeVoiture();
-        maVoitureQuiPollue.colour = "Noir de Jais";
-        maVoitureQuiPollue.kmTravelled = 54100;
+        maVoitureQuiPollue.setColour("White");
+        maVoitureQuiPollue.setKmTravelled(1515446584);
         maVoitureQuiPollue.setLicensePlate("AAA-111");
-        maVoitureQuiPollue.model = "Carrera S";
+        maVoitureQuiPollue.setModel("Porsche");
         maVoitureQuiPollue.setYear(2017);
         System.out.println(maVoitureQuiPollue.getDesc());
     }
