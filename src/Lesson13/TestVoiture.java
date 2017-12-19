@@ -17,7 +17,7 @@ public class TestVoiture {
         maVoitureQuiPollue.kmTravelled = 54100;
         maVoitureQuiPollue.licensePlate = "JOHNNY7";
         maVoitureQuiPollue.model = "Carrera S";
-        maVoitureQuiPollue.year = 2017;
+        maVoitureQuiPollue.setYear(2017);
         System.out.println(maVoitureQuiPollue.getDesc());
     }
 
