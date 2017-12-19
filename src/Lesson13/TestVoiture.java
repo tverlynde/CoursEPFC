@@ -15,7 +15,7 @@ public class TestVoiture {
         TypeVoiture maVoitureQuiPollue = new TypeVoiture();
         maVoitureQuiPollue.colour = "Noir de Jais";
         maVoitureQuiPollue.kmTravelled = 54100;
-        maVoitureQuiPollue.licensePlate = "JOHNNY7";
+        maVoitureQuiPollue.setLicensePlate("AAA-111");
         maVoitureQuiPollue.model = "Carrera S";
         maVoitureQuiPollue.setYear(2017);
         System.out.println(maVoitureQuiPollue.getDesc());
