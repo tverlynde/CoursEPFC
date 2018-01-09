@@ -8,12 +8,20 @@ package Lesson13;
 public class Rectangle {
     double longueur ;
     double largeur ;
+
+    Rectangle(){}
+    
+    public Rectangle(double longueur, double largeur) {
+        this.longueur = longueur;
+        this.largeur = largeur;
+    }    
     
     public double getPerimeter(){
     return ((longueur + largeur)*2);}
     
     public double getArea(){
     return (longueur * largeur);}
+
     
 }
 

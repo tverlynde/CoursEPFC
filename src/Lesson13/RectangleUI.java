@@ -14,8 +14,8 @@ import java.util.Scanner;
 public class RectangleUI {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Veuillez introduire hauteur et largeur :");
-        Rectangle rect = new Rectangle();
+        System.out.println("Veuillez introduire hauteur et largeur :");     
+         Rectangle rect = new Rectangle(10,20);
         rect.largeur = input.nextDouble();
         rect.longueur = input.nextDouble();
         System.out.println("L'aire est de " + rect.getArea() + " cm.");
