@@ -13,7 +13,7 @@ public class Rectangle {
     return ((longueur + largeur)*2);}
     
     public double getArea(){
-    return longueur * largeur;}
+    return (longueur * largeur);}
     
 }
 

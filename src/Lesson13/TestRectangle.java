@@ -12,8 +12,8 @@ package Lesson13;
 public class TestRectangle {
     public static void main(String[] args) {
         Rectangle test = new Rectangle();
-        test.largeur = 8;
-        test.longueur = 5;
+        test.largeur = 87;
+        test.longueur = 50;
         System.out.println(test.getArea());
         System.out.println(test.getPerimeter());
     }
